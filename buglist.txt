@@ -1,0 +1,5 @@
+Bugs:
+- enqueue() makes the front pointer point to each new added value instead of the first value added to the queue.
+- peekFront() peeks at the back value due to enqueue()
+- dequeue() removes the back value due to enqueue()
+- ~Queue() does not delete all entries in the queue
