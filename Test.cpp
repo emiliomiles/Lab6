@@ -149,7 +149,11 @@ void Test::test8()
 {
   Queue q;
   bool test = false;
-  if(q.isEmpty())
+  try
+  {
+    q.peekFront();
+  }
+  catch(std::runtime_error e)
   {
     test = true;
   }
